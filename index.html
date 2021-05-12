@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Add New product1</title>
+</head>
+<body class="">
+    
+    <div class="nav flex items-center justify-between px-8 py-4 text-base fixed top-0 w-full">
+        <div class="flex">
+            <div class="flex items-center">
+                <img class="mr-1" src="./Images/school-icon-placeholder.svg" alt="">
+                <span class="mr-10">Ebere Stores</span>
+                <img src="./Images/ic_unfold_more.svg" alt="">
+            </div>
+            <div class="ml-8 md:flex hidden">
+                <div class="logo w-6 h-7"></div>
+                <p class="flex flex-col text-xs" style="color: #D90809 ;">Pali<span style="color: #F07D22 ;">Page</span></p>
+            </div>
+        </div>
+
+        <div class="md:flex hidden items-center">
+            <img class="mr-4" src="./Images/ic-notification.svg" alt="">
+            <span class="mr-4">Soni Braide</span>
+            <div class="h-8 w-8 text-center text-white" style="background-color: #BFC4D5; border-radius: 4px;">DF</div>
+        </div>
+
+        <button id="menu" class="md:hidden block focus:outline-none">
+            <i class="fas fa-bars" onclick="toggleSidenav()"></i>
+        </button>
+    </div>
+
+
+
+    <div class="w-full flex pt-14">
+        <div class="sidenav px-6 pt-8 w-60 font-sm md:block hidden">
+            <div class="flex flex-col gap-4">
+                <div class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-overview.svg" alt="">
+                    <span class="w-full">Dashboard</span>
+                </div>
+                <div class="flex active py-2 pl-4 w-full">
+                    <div class="rep mr-4"></div>
+                    <span class="w-full">Products</span>
+                </div>
+                <div class="flex py-2 pl-4 w-full">
+                    <div class="rep mr-4"></div>
+                    <span class="w-full">Wallet</span>
+                </div>
+                <div class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-analytics.svg" alt="">
+                    <span class="w-full">My sales</span>
+                </div>
+                <div class="flex py-2 pl-4 w-full">
+                    <div class="rep mr-4"></div>
+                    <span class="w-full">Affiliate sales</span>
+                </div>
+                <div class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-settings.svg" alt="">
+                    <span class="w-full">Settings</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 mt-44"> 
+                <div  class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-help-center.svg" alt="">
+                    <span class="w-full">Help Center</span>
+                </div>
+                <div  class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-logout.svg" alt="">
+                    <span class="w-full">Log out</span>
+                </div>
+            </div>
+
+            <div class="mt-20">
+                <p class="text-xs" style="color: #9599AC;">powered by:</p>
+                <img src="./Images/dumo-logo.svg" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="px-6 md:pt-8 pt-10 w-full" style="box-shadow: -1px 0px 3px #3F3F4429;">
+            <button class="px-4 py-1 flex items-center font-semibold" style="border-radius: 4px; color: #324A50; background-color: #EAECED;">
+                <div class="rep mr-2"></div>
+                <span class="text-xs">Go back</span>
+            </button>
+
+            <h1 class="heading font-black text-base my-6">Add New Product</h1>
+
+            <form action="" class="md:w-4/6 w-full font-medium border-b" style="border-color: #E7EAF4;">
+                <label for="productName">Product Name</label>
+                <input type="text" class="w-full rounded mt-1 pl-4 py-2 text-sm font-medium opacity-40" placeholder="Enter your product name">
+
+                <div class="my-5 flex md:flex-row flex-col items-center gap-6">
+                    <div class="md:w-1/2 w-full">
+                        <label for="ProductCat">Product Category</label><br>
+                        <select type="text" class="w-full font-medium rounded mt-1 border px-4 py-2 text-sm" style="color: #374072; border-color: #DEDEDF;">
+                            <option value="">Choose product category</option>
+                        </select>
+                    </div>
+                    <div class="md:w-1/2 w-full">
+                        <label for="productType">Product Type</label><br>
+                        <select type="text" class="w-full font-medium rounded mt-1 border px-4 py-2 text-sm" style="color: #374072; border-color: #DEDEDF;">
+                            <option value="">Select product type</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="productDesc"><p>Product Description</p></label>                
+                <textarea placeholder="Enter a brief description of your product" name="" id="" class="w-full mb-8 h-20 border rounded mt-1 border pl-4 py-2 text-sm font-medium opacity-40" style="color: #646A86; border-color: #DEDEDF;"></textarea>
+            </form>
+
+            <form action="" class="md:w-4/6 w-full font-medium">
+                <div class="my-5 grid md:grid-cols-2 grid-cols-1 gap-6">
+                    <div class="">
+                        <div class="w-full">
+                            <label for="pdtPrice">Product price</label> <span class="float-right rounded-full text-white" style="font-size: 8px; background-color: #E7EAF4;">i</span><br>
+                        </div>
+                        <input type="text" class="w-full rounded mt-1 border pl-4 py-2 text-sm font-medium opacity-40" style="border-color: #DEDEDF;" placeholder="0.00">
+                    </div>
+                    <div class="">
+                        <label for="promoPrice">Promo price(Optional)</label> <span class="px-1 rounded-full text-white" style="font-size: 8px; background-color: #E7EAF4;">i</span><br>
+                        <input type="text" class="w-full rounded mt-1 border pl-4 py-2 text-sm font-medium opacity-40" style="border-color: #DEDEDF;" placeholder="0.00">
+                    </div>
+                    <div class="">
+                        <div class="w-full">
+                            <label for="qtyAva">Quantity available</label> <span class="float-right rounded-full text-white" style="font-size: 8px; background-color: #E7EAF4;">i</span><br>
+                        </div>
+                        <input type="text" class="w-full rounded mt-1 pl-4 py-2 text-sm font-medium opacity-40" placeholder="0">
+                    </div>
+                </div>
+            </form>
+
+
+
+
+            <div class="img-box rounded p-6 md:w-4/6 w-full mb-6">
+                <p class="font-medium text-xs uppercase" style="color: #7C8191;">Add product image(s)</p>
+                <div class="mt-4 flex items-center gap-6">
+                    <div class="w-32 h-32 rounded">
+                        <img class="w-full rounded" src="./Images/prodimg.jpg" alt="">
+                    </div>
+                    <div class="w-32 h-32 rounded text-center" style="background-color: #E7EAF4;">
+                        <img class="rounded mx-auto my-14" src="./Images/ic-upload-profile-image.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+                <div class="mb-8 flex justify-between md:w-4/6 w-full">
+                    <p class="text-white">.</p>
+                    <button class="btmbtn px-4 py-2 text-base text-white rounded">Save product</button>
+                </div>
+           
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<!--        MOBILE SIDENAV BAR -->
+
+    <div id="mySidenav" class="sidenav px-6 pt-2 w-10/12 h-full font-sm hidden fixed left-0 top-14">
+        <div class="flex flex-col gap-4">
+            <div class="flex items-center pl-4 py-2 bg-black text-white">
+                <img class="mr-4" src="./Images/ic-notification.svg" alt="">
+                <span class="mr-4">Soni Braide</span>
+                <div class="h-8 w-8 text-center text-white" style="background-color: #BFC4D5; border-radius: 4px;">DF</div>
+            </div>
+            <div class="flex py-2 pl-4 w-full">
+                <img class="mr-4" src="./Images/ic-overview.svg" alt="">
+                <span class="w-full">Dashboard</span>
+            </div>
+            <div class="flex active py-2 pl-4 w-full">
+                <div class="rep mr-4"></div>
+                <span class="w-full">Products</span>
+            </div>
+            <div class="flex py-2 pl-4 w-full">
+                <div class="rep mr-4"></div>
+                <span class="w-full">Wallet</span>
+            </div>
+            <div class="flex py-2 pl-4 w-full">
+                <img class="mr-4" src="./Images/ic-analytics.svg" alt="">
+                <span class="w-full">My sales</span>
+            </div>
+            <div class="flex py-2 pl-4 w-full">
+                <div class="rep mr-4"></div>
+                <span class="w-full">Affiliate sales</span>
+            </div>
+            <div class="flex py-2 pl-4 w-full">
+                <img class="mr-4" src="./Images/ic-settings.svg" alt="">
+                <span class="w-full">Settings</span>
+            </div>
+
+            <div class="flex flex-col gap-4"> 
+                <div  class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-help-center.svg" alt="">
+                    <span class="w-full">Help Center</span>
+                </div>
+                <div  class="flex py-2 pl-4 w-full">
+                    <img class="mr-4" src="./Images/ic-logout.svg" alt="">
+                    <span class="w-full">Log out</span>
+                </div>
+            </div>
+
+            <div class="mt-20 flex items-center justify-between">
+                <div>
+                    <p class="text-xs" style="color: #9599AC;">powered by:</p>
+                    <img src="./Images/dumo-logo.svg" alt="">
+                </div>
+                <div class="">
+                    <div class="logo w-6 h-7"></div>
+                    <p class="flex flex-col text-xs" style="color: #D90809 ;">Pali<span style="color: #F07D22 ;">Page</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function toggleSidenav() {
+            if (document.getElementById('mySidenav').style.display = 'none') {
+                document.getElementById('mySidenav').style.display = 'block'
+                document.getElementById('menu').innerHTML = '<i class="fas fa-times"></i>'
+            } else {
+                document.getElementById('mySidenav').style.display = 'none'
+                document.getElementById('menu').innerHTML = '<i class="fas fa-bars"></i>'
+                console.log('goat')
+            }
+        }
+    </script>
+</body>
+</html>
