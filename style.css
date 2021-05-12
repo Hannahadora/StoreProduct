@@ -34,6 +34,10 @@ label {
     color: #7A809B;
 }
 
+#mySidenav {
+    transition: linear 0.5s;
+}
+
 ::placeholder {
     opacity: 0.35;
     font-weight: medium;

@@ -30,8 +30,8 @@
             <div class="h-8 w-8 text-center text-white" style="background-color: #BFC4D5; border-radius: 4px;">DF</div>
         </div>
 
-        <button id="menu" class="md:hidden block focus:outline-none">
-            <i class="fas fa-bars" onclick="toggleSidenav()"></i>
+        <button id="menu" class="md:hidden block focus:outline-none" onclick="toggleSidenav()">
+            <i class="fas fa-bars"></i>
         </button>
     </div>
 
@@ -240,15 +240,15 @@
 
     <script>
         function toggleSidenav() {
-            if (document.getElementById('mySidenav').style.display = 'none') {
-                document.getElementById('mySidenav').style.display = 'block'
-                document.getElementById('menu').innerHTML = '<i class="fas fa-times"></i>'
+            if (document.getElementById('mySidenav').style.display === 'block') {
+                document.getElementById('mySidenav').style.display = 'none';
+                document.getElementById('menu').innerHTML = '<i class="fas fa-bars"></i>';
             } else {
-                document.getElementById('mySidenav').style.display = 'none'
-                document.getElementById('menu').innerHTML = '<i class="fas fa-bars"></i>'
-                console.log('goat')
+                document.getElementById('mySidenav').style.display = 'block';
+                document.getElementById('menu').innerHTML = '<i class="fas fa-times"></i>';
             }
         }
+
     </script>
 </body>
 </html>
